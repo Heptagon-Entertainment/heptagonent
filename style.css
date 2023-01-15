@@ -153,13 +153,32 @@ section {
 }
 
 .computer-img {
-  width: 900px;
-  height: 900px;
+  width: 625px;
+  height: 625px;
   position: absolute;
   z-index: -1;
   margin-left: 600px;
   transform: rotate(5.65deg);
   animation: float 6s ease-in-out infinite;
+  pointer-events: none;
+  user-select: none;
+}
+
+.selection-box{
+  width: 250px;
+  height: 225px;
+  position: absolute;
+  background-color: rgba(137,177,255,0.4);
+  border: 2px solid #0085FF;
+  margin-top: 375px;
+  margin-right: 540px;
+}
+
+.cursor{
+  height:25px;
+  position: absolute;
+  margin-top: 625px;
+  margin-right: 779px;
   pointer-events: none;
   user-select: none;
 }

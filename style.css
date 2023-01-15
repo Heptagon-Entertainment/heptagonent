@@ -120,6 +120,7 @@ footer {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   position: absolute;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -132,8 +133,8 @@ section {
 }
 
 .text-box {
-  width: 500px;
-  height: 368px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -142,14 +143,25 @@ section {
   border-bottom: 10px solid black;
 }
 
-.text-box h1 {
+h1 {
   font-family: "Gotham";
   font-weight: normal;
   font-size: 48px;
 }
 
-.text-box .bold-text {
+.bold-text {
   font-family: "Gotham Bold";
+}
+
+#our-mission .box .text-box {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-bottom: 10px solid #45ff79;
+  margin-right: 150px;
+}
+
+#our-mission #second-box {
+  margin-top: 25px;
 }
 
 .computer-img {
@@ -158,32 +170,54 @@ section {
   position: absolute;
   z-index: -1;
   margin-left: 600px;
-  transform: rotate(5.65deg);
+  transform: rotate(5.5deg);
   animation: float 6s ease-in-out infinite;
   pointer-events: none;
   user-select: none;
 }
 
-.selection-box{
+.planet-img {
+  width: 450px;
+  height: 450px;
+  animation: float 4s ease-in-out infinite;
+  pointer-events: none;
+  user-select: none;
+}
+
+.selection-box {
   width: 250px;
   height: 225px;
   position: absolute;
-  background-color: rgba(137,177,255,0.4);
-  border: 2px solid #0085FF;
+  background-color: rgba(137, 177, 255, 0.4);
+  border: 2px solid #0085ff;
   margin-top: 375px;
   margin-right: 540px;
+  animation: scale-selection 3s ease-in-out forwards;
+  transform-origin: 100% 0%;
 }
 
-.cursor{
-  height:25px;
+.cursor {
+  height: 25px;
   position: absolute;
   margin-top: 625px;
   margin-right: 779px;
   pointer-events: none;
   user-select: none;
+  animation: cursor-movement 3s ease-in-out forwards;
 }
 
 /*section:nth-of-type(1) {}*/
+
+.arrow {
+  margin-top: 650px;
+  position: absolute;
+}
+
+.arrow .arrow-img {
+  height: 30px;
+  animation: float 2s ease-in-out infinite;
+  user-select: none;
+}
 
 .data {
   justify-content: center;
@@ -203,6 +237,24 @@ section {
   }
   100% {
     transform: translatey(0px);
+  }
+}
+
+@keyframes scale-selection {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes cursor-movement {
+  0% {
+    transform: translate(253px, -228px);
+  }
+  100% {
+    transform: translate(0);
   }
 }
 

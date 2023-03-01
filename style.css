@@ -33,19 +33,19 @@ body {
 /* HEADER */
 header {
   width: 100%;
-  height: 48px;
+  height: 3rem;
   background-color: rgb(255, 255, 255);
   position: fixed;
   display: block;
   text-align: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   z-index: 2;
-  box-shadow: 0px -24px 1px 24px rgb(0, 0, 0);
+  box-shadow: 0px -1.5rem 1px 1.5rem rgb(0, 0, 0);
 }
 
 .heptagon-logo {
-  width: 250px;
+  width: 15rem;
   display: inline-block;
   margin: 0 auto;
   pointer-events: none;
@@ -54,22 +54,22 @@ header {
 
 /* FOOTER */
 footer {
-  height: 20px;
+  height: 1.5rem;
   background-color: rgb(255, 255, 255);
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 32px;
+  padding: 2rem;
   justify-content: space-between;
   align-items: center;
   display: flex;
   border: 0;
-  box-shadow: 0px 24px 1px -24px rgb(0, 0, 0) inset;
+  box-shadow: 0px 1.5rem 1px -1.5rem rgb(0, 0, 0) inset;
 }
 
 .copyright {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: Arial, Helvetica, sans-serif;
   user-select: none;
 }
@@ -82,12 +82,12 @@ footer {
 }
 
 .social-media .facebook-icon {
-  margin-right: 25px;
+  margin-right: 1.5rem;
   user-select: none;
 }
 
 .social-media .twitter-icon {
-  margin-right: 25px;
+  margin-right: 1.5rem;
   user-select: none;
 }
 
@@ -100,14 +100,16 @@ footer {
   width: 100vw;
   height: 100vh;
   font-family: "Gotham Black";
-  font-size: 710px;
-  line-height: 600px;
+  font-size: 44.375rem;
+  line-height: 37.5rem;
   transform: rotate(-17deg);
-  right: 100rem;
   top: -50rem;
   color: transparent;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 0.063rem;
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   z-index: -2;
   user-select: none;
@@ -139,37 +141,145 @@ section {
   align-items: center;
   display: flex;
   background-color: white;
-  outline: 1px solid rgba(0, 0, 0, 0.4);
-  border-bottom: 10px solid black;
+  outline: 0.063rem solid rgba(0, 0, 0, 0.4);
+  border-bottom: 0.625rem solid black;
 }
 
 h1 {
   font-family: "Gotham";
   font-weight: normal;
-  font-size: 48px;
+  font-size: 3rem;
 }
 
 .bold-text {
   font-family: "Gotham Bold";
 }
 
-#our-mission .box .text-box {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  border-bottom: 10px solid #45ff79;
-  margin-right: 150px;
+#purple-text {
+  color: #4a47ff;
 }
 
-#our-mission #second-box {
-  margin-top: 25px;
+#our-mission .box .text-box {
+  width: 672px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-bottom: 0.625rem solid #45ff79;
+}
+
+#our-mission #mission-button {
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  margin-top: 15rem;
+  margin-left: 48rem;
+  background-color: #45ff79;
+  border: none;
+  outline: 0.063rem solid rgba(0, 0, 0, 0.4);
+  animation: scale-up 3s ease-in-out infinite;
+  cursor: pointer;
+}
+
+#heptagon-music .box .text-box {
+  border-bottom: 0.625rem solid #4a47ff;
+}
+
+#heptagon-music #heptagon-music-button {
+  width: 10rem;
+  height: 3rem;
+  font-size: 1rem;
+  border: none;
+  outline: 0.063rem solid rgba(74, 71, 255, 1);
+  cursor: pointer;
+  color: #4a47ff;
+  background-color: white;
+  margin-top: 1rem;
+  transition: .4s ease;
+}
+
+#heptagon-music #heptagon-music-button:hover {
+  width: 20rem;
+  background-color: #4a47ff;
+  color: white;
+}
+
+#heptagon-shop #heptagon-shop-button {
+  width: 12rem;
+  height: 3rem;
+  font-size: 1rem;
+  border: none;
+  outline: 0.063rem solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  margin-top: 1rem;
+  transition: .4s ease;
+}
+
+#heptagon-shop #heptagon-shop-button:hover {
+  width: 20rem;
+  background-color: black;
+  color: white;
+}
+
+#social-media .box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#social-media .box div .facebook{
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+#social-media .box div .twitter{
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+#social-media .box div .instagram{
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+#social-media .box div .facebook:hover{
+  color: #3b5998;
+  transform: scale(1.1);
+}
+
+#social-media .box div .twitter:hover{
+  color:#00acee;
+  transform: scale(1.1);
+}
+
+#social-media .box div .instagram:hover{
+  color: #d62976;
+  transform: scale(1.1);
+}
+
+#social-media h1 {
+  font-size: 2.5rem;
+}
+
+#social-media h2 {
+  font-family: "Gotham";
+  margin-top: 0;
+}
+
+#freepik {
+  margin-top: 2rem;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
 }
 
 .computer-img {
-  width: 625px;
-  height: 625px;
+  width: 39rem;
+  height: 39rem;
   position: absolute;
   z-index: -1;
-  margin-left: 600px;
+  margin-left: 37.5rem;
   transform: rotate(5.5deg);
   animation: float 6s ease-in-out infinite;
   pointer-events: none;
@@ -177,9 +287,31 @@ h1 {
 }
 
 .planet-img {
-  width: 450px;
-  height: 450px;
+  width: 29rem;
+  height: 29rem;
   animation: float 4s ease-in-out infinite;
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.headphones-img {
+  width: 33rem;
+  height: 33rem;
+  z-index: -1;
+  margin-left: 5rem;
+  animation: float 6s ease-in-out infinite;
+  pointer-events: none;
+  user-select: none;
+}
+
+.bag-img{
+  width: 33rem;
+  height: 33rem;
+  z-index: -1;
+  margin-left: 5rem;
+  animation: float 6s ease-in-out infinite;
   pointer-events: none;
   user-select: none;
 }
@@ -189,7 +321,7 @@ h1 {
   height: 225px;
   position: absolute;
   background-color: rgba(137, 177, 255, 0.4);
-  border: 2px solid #0085ff;
+  border: 0.125rem solid #0085ff;
   margin-top: 375px;
   margin-right: 540px;
   animation: scale-selection 3s ease-in-out forwards;
@@ -209,12 +341,12 @@ h1 {
 /*section:nth-of-type(1) {}*/
 
 .arrow {
-  margin-top: 650px;
+  margin-top: 40rem;
   position: absolute;
 }
 
 .arrow .arrow-img {
-  height: 30px;
+  height: 2rem;
   animation: float 2s ease-in-out infinite;
   user-select: none;
 }
@@ -230,13 +362,25 @@ h1 {
 /* ANIMATIONS */
 @keyframes float {
   0% {
-    transform: translatey(0px);
+    transform: translatey(0rem);
   }
   50% {
-    transform: translatey(-10px);
+    transform: translatey(-0.6rem);
   }
   100% {
-    transform: translatey(0px);
+    transform: translatey(0rem);
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(120%);
+  }
+  100% {
+    transform: scale(100%);
   }
 }
 

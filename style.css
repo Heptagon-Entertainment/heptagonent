@@ -171,7 +171,6 @@ h1 {
   width: 3rem;
   position: absolute;
   margin-top: 15rem;
-  margin-left: 48rem;
   background-color: #45ff79;
   border: none;
   outline: 0.063rem solid rgba(0, 0, 0, 0.4);
@@ -261,6 +260,7 @@ h1 {
 
 #social-media h1 {
   font-size: 2.5rem;
+  text-align: center;
 }
 
 #social-media h2 {
@@ -421,13 +421,159 @@ h1 {
 }
 
 @media (max-width: 1025px) {
+  .arrow{
+    margin-top: 35rem;
+  }
+
+  .computer-img{
+    height: 34rem;
+    width: 34rem;
+  }
+
+  .planet-img{
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .headphones-img{
+    height: 26rem;
+    width: 26rem;
+    position: absolute;
+    margin-left: 38rem;
+    rotate: 8deg;
+  }
+
+  .bag-img{
+    height: 26rem;
+    width: 26rem;
+    position: absolute;
+    margin-left: 38rem;
+    rotate: 8deg;
+  }
+
+  h1{
+    font-size: 2.8rem;
+  }
+
+  #social-media h1{
+    font-size: 2.5rem;
+  }
+
+  #social-media h2{
+    font-size: 1rem;
+  }
+
+  #freepik{
+    font-size: 0.7rem;
+  }
 }
 
 @media (max-width: 769px) {
+  .selection-box{
+    display: none;
+  }
+
+  .cursor{
+    display: none;
+  }
+
+  .computer-img{
+    display: none;
+  }
+
+  .planet-img{
+    display: none;
+  }
+
+  .headphones-img{
+    display: none;
+  }
+
+  .bag-img{
+    display: none;
+  }
+
+  #our-mission .box .text-box {
+    width: 40rem;
+  }
+
+  #social-media h1{
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 481px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #our-mission .box .text-box {
+    width: 18rem;
+  }
+
+  #our-mission #mission-button {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 17rem;
+  }
+
+  #social-media h2{
+    font-size: 1rem;
+  }
+
+  #freepik{
+    font-size: 0.7rem;
+  }
 }
 
 @media (max-width: 320px) {
+  .heptagon-logo{
+    height: 2.7rem;
+  }
+
+  footer{
+    justify-content: center;
+  }
+
+  .copyright{
+    display: none;
+  }
+
+  .arrow{
+    transform: scale(0.8);
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #our-mission .box .text-box {
+    width: 10rem;
+  }
+
+  #our-mission #mission-button {
+    height: 2rem;
+    width: 2rem;
+    margin-top: 14.5rem;
+  }
+
+  #heptagon-music .box .text-box h1 {
+    font-size: 1.2rem;
+  }
+
+  #heptagon-music #heptagon-music-button {
+    font-size: 0.8rem;
+    width: 8rem;
+    height: 2.5rem;
+  }
+
+  #heptagon-shop .box .text-box h1 {
+    font-size: 1.2rem;
+  }
+
+  #heptagon-shop #heptagon-shop-button {
+    width: 9rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
 }

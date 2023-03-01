@@ -402,6 +402,24 @@ h1 {
   }
 }
 
+@keyframes scale-selection {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes cursor-movement {
+  0% {
+    transform: translate(253px, -228px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
 @media (max-width: 1025px) {
 }
 

@@ -145,7 +145,7 @@ section {
   border-bottom: 0.625rem solid black;
 }
 
-h1 {
+h1, h2 {
   font-family: "Gotham";
   font-weight: normal;
   font-size: 3rem;
@@ -263,7 +263,7 @@ h1 {
   text-align: center;
 }
 
-#social-media h2 {
+#social-media h3 {
   font-family: "Gotham";
   margin-top: 0;
 }
@@ -451,7 +451,7 @@ h1 {
     rotate: 8deg;
   }
 
-  h1 {
+  h1, h2 {
     font-size: 2.8rem;
   }
 
@@ -460,6 +460,10 @@ h1 {
   }
 
   #social-media h2 {
+    font-size: 2.5rem;
+  }
+
+  #social-media h3 {
     font-size: 1rem;
   }
 
@@ -500,10 +504,14 @@ h1 {
   #social-media h1 {
     font-size: 1.7rem;
   }
+
+  #social-media h2 {
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 481px) {
-  h1 {
+  h1, h2 {
     font-size: 2rem;
   }
 
@@ -517,7 +525,7 @@ h1 {
     margin-top: 17rem;
   }
 
-  #social-media h2 {
+  #social-media h3 {
     font-size: 1rem;
   }
 
@@ -543,7 +551,7 @@ h1 {
     transform: scale(0.8);
   }
 
-  h1 {
+  h1, h2 {
     font-size: 1.5rem;
   }
 
@@ -561,6 +569,10 @@ h1 {
     font-size: 1.2rem;
   }
 
+  #heptagon-music .box .text-box h2 {
+    font-size: 1.2rem;
+  }
+
   #heptagon-music #heptagon-music-button {
     font-size: 0.8rem;
     width: 8rem;
@@ -568,6 +580,10 @@ h1 {
   }
 
   #heptagon-shop .box .text-box h1 {
+    font-size: 1.2rem;
+  }
+
+  #heptagon-shop .box .text-box h2 {
     font-size: 1.2rem;
   }
 
